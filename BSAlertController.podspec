@@ -24,7 +24,8 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESCUIAlertController cannot custom the view, and BSAlertController is the solution
+  s.description  = <<-DESC
+  UIAlertController cannot custom the view, and BSAlertController is the solution, Cool!
                    DESC
 
   s.homepage     = "https://github.com/blurryssky/BSAlertController"
