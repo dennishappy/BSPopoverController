@@ -8,32 +8,32 @@
 
 import UIKit
 
-class BSAlertController: UIViewController {
+public class BSAlertController: UIViewController {
 
-    typealias Animations = () -> Void
-    typealias Completion = (Bool) -> Void
+    public typealias Animations = () -> Void
+    public typealias Completion = (Bool) -> Void
     
-    var contentView: UIView?
+    public var contentView: UIView?
     
-    var maskColor: UIColor! {
+    public var maskColor: UIColor! {
         didSet {
             mask.backgroundColor = maskColor
         }
     }
     
-    var statusBarStyle: UIStatusBarStyle = .Default
-    var statusBarHidden: Bool = false
-    var tapGestureEnabled: Bool = true {
+    public var statusBarStyle: UIStatusBarStyle = .Default
+    public var statusBarHidden: Bool = false
+    public var tapGestureEnabled: Bool = true {
         didSet {
             tap.enabled = tapGestureEnabled
         }
     }
     
-    var animationDuration: NSTimeInterval = 0.25
-    var showAnimations: Animations? = { }
-    var dismissAnimations: Animations? = { }
-    var showCompletion: Completion? = { _ in }
-    var dismissCompletion: Completion? = { _ in }
+    public var animationDuration: NSTimeInterval = 0.25
+    public var showAnimations: Animations? = { }
+    public var dismissAnimations: Animations? = { }
+    public var showCompletion: Completion? = { _ in }
+    public var dismissCompletion: Completion? = { _ in }
     
     private(set) var animating: Bool = false
     
@@ -53,11 +53,11 @@ class BSAlertController: UIViewController {
         return tap
     }()
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    override public func preferredStatusBarStyle() -> UIStatusBarStyle {
         return statusBarStyle
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override public func prefersStatusBarHidden() -> Bool {
         return statusBarHidden
     }
 }
@@ -99,7 +99,7 @@ extension BSAlertController {
 }
 
 //MARK:Public
-extension BSAlertController {
+public extension BSAlertController {
     
     func show() {
         
