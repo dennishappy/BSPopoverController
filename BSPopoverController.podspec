@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BSPopoverController"
-  s.version      = "0.0.4"
-  s.summary      = "UIAlertController cannot custom the view, UIPopoverController cannot custom presentation style and something, use BSPopoverController to solve it"
+  s.version      = "0.0.6"
+  s.summary      = "use BSPopoverController to custom the popover view and presentation animations"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/blurryssky/BSPopoverController.git", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/blurryssky/BSPopoverController.git", :tag => "0.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "BSPopoverControllerSample/BSPopoverController/*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "BSPopoverController", "BSPopoverControllerSample/BSPopoverController/*"
+  s.exclude_files = "Classes/"
 
   # s.public_header_files = "Classes/**/*.h"
 
