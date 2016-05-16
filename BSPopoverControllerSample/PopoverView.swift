@@ -8,9 +8,9 @@
 
 import UIKit
 
-class AlertView: UIView {
+class PopoverView: UIView {
 
-    
     @IBAction func respondsToButton(sender: UIButton) {
+        
     }
 }

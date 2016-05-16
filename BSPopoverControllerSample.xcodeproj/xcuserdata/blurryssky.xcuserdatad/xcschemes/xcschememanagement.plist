@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BSAlertViewControllerSample.xcscheme</key>
+		<key>BSPopoverControllerSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>84BDF7C31CE5B62F00108E96</key>
+		<key>84BDF8221CE9A52200108E96</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84BDF7C31CE5B62F00108E96"
-               BuildableName = "BSAlertViewControllerSample.app"
-               BlueprintName = "BSAlertViewControllerSample"
-               ReferencedContainer = "container:BSAlertViewControllerSample.xcodeproj">
+               BlueprintIdentifier = "84BDF8221CE9A52200108E96"
+               BuildableName = "BSPopoverControllerSample.app"
+               BlueprintName = "BSPopoverControllerSample"
+               ReferencedContainer = "container:BSPopoverControllerSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BDF7C31CE5B62F00108E96"
-            BuildableName = "BSAlertViewControllerSample.app"
-            BlueprintName = "BSAlertViewControllerSample"
-            ReferencedContainer = "container:BSAlertViewControllerSample.xcodeproj">
+            BlueprintIdentifier = "84BDF8221CE9A52200108E96"
+            BuildableName = "BSPopoverControllerSample.app"
+            BlueprintName = "BSPopoverControllerSample"
+            ReferencedContainer = "container:BSPopoverControllerSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BDF7C31CE5B62F00108E96"
-            BuildableName = "BSAlertViewControllerSample.app"
-            BlueprintName = "BSAlertViewControllerSample"
-            ReferencedContainer = "container:BSAlertViewControllerSample.xcodeproj">
+            BlueprintIdentifier = "84BDF8221CE9A52200108E96"
+            BuildableName = "BSPopoverControllerSample.app"
+            BlueprintName = "BSPopoverControllerSample"
+            ReferencedContainer = "container:BSPopoverControllerSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84BDF7C31CE5B62F00108E96"
-            BuildableName = "BSAlertViewControllerSample.app"
-            BlueprintName = "BSAlertViewControllerSample"
-            ReferencedContainer = "container:BSAlertViewControllerSample.xcodeproj">
+            BlueprintIdentifier = "84BDF8221CE9A52200108E96"
+            BuildableName = "BSPopoverControllerSample.app"
+            BlueprintName = "BSPopoverControllerSample"
+            ReferencedContainer = "container:BSPopoverControllerSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

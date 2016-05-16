@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BSAlertViewControllerSample.xcodeproj">
+      location = "self:BSPopoverControllerSample.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
 //  BSViewController.swift
-//  BSAlertControllerSample
+//  BSpopoverControllerSample
 //
 //  Created by 张亚东 on 16/5/13.
 //  Copyright © 2016年 blurryssky. All rights reserved.
@@ -10,29 +10,29 @@ import UIKit
 
 class BSViewController: UIViewController {
 
-    lazy var alertView: UIView = {
+    lazy var poppverView: UIView = {
         
-        let alert: UIView = NSBundle.mainBundle().loadNibNamed("AlertView", owner: nil, options: nil).first! as! AlertView
-        alert.alpha = 0
-        alert.frame = CGRectMake(0, 0, 300, 300)
-        alert.center = self.alertController.view.center
-        return alert
+        let poppver: UIView = NSBundle.mainBundle().loadNibNamed("PopoverView", owner: nil, options: nil).first! as! PopoverView
+        poppver.alpha = 0
+        poppver.frame = CGRectMake(0, 0, 300, 300)
+        poppver.center = self.popoverController.view.center
+        return poppver
     }()
     
-    lazy var alertController: BSAlertController = {
-        let alertController: BSAlertController = BSAlertController()
+    lazy var popoverController: BSPopoverController = {
+        let popoverController: BSPopoverController = BSPopoverController()
         
         //optional properties
-        alertController.tapGestureEnabled = true
-        alertController.maskColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+        popoverController.tapGestureEnabled = true
+        popoverController.maskColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
         
         
         // add '[unowned self] in' if revoke self
-        alertController.showAnimations = { [unowned self] in
-            self.alertView.alpha = 1
+        popoverController.showAnimations = { [unowned self] in
+            self.poppverView.alpha = 1
         }
         
-        alertController.showCompletion = { _ in
+        popoverController.showCompletion = { _ in
             
             print("did show!--------------------------------------------\n")
             print("\ndid show keywindow:\n")
@@ -45,11 +45,11 @@ class BSViewController: UIViewController {
             }
         }
         
-        alertController.dismissAnimations = { [unowned self] in
-            self.alertView.alpha = 0
+        popoverController.dismissAnimations = { [unowned self] in
+            self.poppverView.alpha = 0
         }
         
-        alertController.dismissCompletion = { _ in
+        popoverController.dismissCompletion = { _ in
             print("did dismiss!-----------------------------------------\n")
             print("\ndid dismiss keywindow:\n")
             print(UIApplication.sharedApplication().keyWindow!)
@@ -61,7 +61,7 @@ class BSViewController: UIViewController {
             }
         }
         
-        return alertController
+        return popoverController
     }()
     
     deinit {
@@ -71,7 +71,7 @@ class BSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        alertController.contentView = alertView
+        popoverController.view.addSubview(poppverView)
         
     }
 
@@ -81,7 +81,7 @@ class BSViewController: UIViewController {
         print("\noriginal keywindow:\n")
         print(UIApplication.sharedApplication().keyWindow!)
         
-        alertController.show()
+        popoverController.show()
     }
 
 }

@@ -1,6 +1,6 @@
 //
-//  BSAlertController.swift
-//  VehicleGroup
+//  BSPopoverController.swift
+//
 //
 //  Created by 张亚东 on 16/5/9.
 //  Copyright © 2016年 doyen. All rights reserved.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-public class BSAlertController: UIViewController {
+public class BSPopoverController: UIViewController {
 
     public typealias Animations = () -> Void
     public typealias Completion = (Bool) -> Void
     
-    public var contentView: UIView?
-    
-    public var maskColor: UIColor! {
+    public var maskColor: UIColor = UIColor.clearColor() {
         didSet {
             mask.backgroundColor = maskColor
         }
@@ -49,7 +47,7 @@ public class BSAlertController: UIViewController {
     
     //Gesture
     lazy var tap: UITapGestureRecognizer = {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(BSAlertController.handleTap(_:)))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(BSPopoverController.handleTap(_:)))
         return tap
     }()
     
@@ -62,7 +60,7 @@ public class BSAlertController: UIViewController {
     }
 }
 
-extension BSAlertController {
+extension BSPopoverController {
     
     func handleTap(tap: UITapGestureRecognizer) {
         dismiss()
@@ -71,7 +69,7 @@ extension BSAlertController {
 
 
 //MARK:Private
-extension BSAlertController {
+extension BSPopoverController {
     
     func prepareForShow() {
         temporaryWindow = getTempoaryWindow()
@@ -83,12 +81,7 @@ extension BSAlertController {
             mask.backgroundColor = maskColor
             mask.alpha = 0
         }
-        
-        guard contentView != nil else {
-            return
-        }
-        
-        view.addSubview(contentView!)
+
     }
     
     func finishForDismiss() {
@@ -99,7 +92,7 @@ extension BSAlertController {
 }
 
 //MARK:Public
-public extension BSAlertController {
+public extension BSPopoverController {
     
     func show() {
         
@@ -144,7 +137,7 @@ public extension BSAlertController {
 }
 
 //MARK:Help
-extension BSAlertController {
+extension BSPopoverController {
     
     func getTempoaryWindow() -> UIWindow {
         let window = UIWindow(frame: self.view.bounds)

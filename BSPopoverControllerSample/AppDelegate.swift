@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BSAlertViewControllerSample
+//  BSPopoverControllerSample
 //
-//  Created by 张亚东 on 16/5/13.
+//  Created by 张亚东 on 16/5/16.
 //  Copyright © 2016年 blurryssky. All rights reserved.
 //
 
