@@ -7,7 +7,7 @@ use BSPopoverController to custom the popover view and animations
 
 ## Installation
 
-> pod 'BSPopoverController', '~> 0.0.4'
+> pod 'BSPopoverController', '~> 0.0.6'
 
 ## Usage
 
